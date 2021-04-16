@@ -14,14 +14,9 @@ int main() {
 
 int fatorial(int n)
 {
-  int aux;
-  cout << n ;
-
   if(n == 1){
     return (1);
   }else{
-    aux = n * fatorial(n - 1);
-    cout << " " << aux << endl;
-    return (aux);
+    return (n * fatorial(n - 1));
   }
 }
